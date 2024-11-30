@@ -1,0 +1,42 @@
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  /* Add spacing between the logo and navigation */
+}
+
+.header .logo a {
+  text-decoration: none;
+  color: #ffcc00;
+  transition: color 0.3s ease;
+}
+
+.header .logo a:hover {
+  color: #fff;
+}
+
+.top-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #ffcc00;
+}

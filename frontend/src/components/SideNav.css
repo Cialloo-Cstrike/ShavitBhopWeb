@@ -1,0 +1,13 @@
+.side-nav {
+  background-color: #333;
+  color: white;
+  width: 200px;
+  padding: 1rem;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 1rem 0;
+}

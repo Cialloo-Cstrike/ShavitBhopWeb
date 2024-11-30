@@ -1,0 +1,37 @@
+.LatestWrTableContainer {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.LatestWrTable {
+  width: 90%;
+  max-width: 1200px; /* Optional: Limit table width */
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.LatestWrTable th,
+.LatestWrTable td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.LatestWrTable th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.LatestWrTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.LatestWrTable tr:hover {
+  background-color: #f1f1f1;
+}

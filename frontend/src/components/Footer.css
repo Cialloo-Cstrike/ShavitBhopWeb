@@ -1,0 +1,17 @@
+.footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .footer a {
+    color: white; /* Match the footer text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Optional: Make the link bold */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+  }
+  

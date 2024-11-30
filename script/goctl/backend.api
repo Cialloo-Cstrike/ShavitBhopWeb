@@ -1,0 +1,41 @@
+syntax = "v1"
+
+@server (
+	prefix:     /api
+	middleware: CorsAllMiddleware,PublicAccessFilter
+)
+service api {
+	@doc "最高分玩家"
+	@handler FindTopPointPlayer
+	get /top/point (FindTopPointPlayerReq) returns (FindTopPointPlayerResp)
+
+	@doc "最近WR"
+	@handler FindLatestWr
+	get /latest/wr (FindLatestWrReq) returns (FindLatestWrResp)
+
+	@doc "最近完成"
+	@handler FindLatestCompletion
+	get /latest/completion (FindLatestCompletionReq) returns (FindLatestCompletionResp)
+}
+
+type FindLatestCompletionReq {
+	Limit  int32 `form:"limit,range=[10:20],default=10"`
+	Offset int32 `form:"offset,range=[0:100],default=0"`
+}
+
+type FindLatestCompletionResp {}
+
+type FindTopPointPlayerReq {
+	Limit  int32 `form:"limit,range=[10:20],default=10"`
+	Offset int32 `form:"offset,range=[0:100],default=0"`
+}
+
+type FindTopPointPlayerResp {}
+
+type FindLatestWrReq {
+	Limit  int32 `form:"limit,range=[10:20],default=10"`
+	Offset int32 `form:"offset,range=[0:100],default=0"`
+}
+
+type FindLatestWrResp {}
+

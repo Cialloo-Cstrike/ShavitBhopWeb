@@ -1,0 +1,43 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.about-title {
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.about-server-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-server-list li {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.about-content a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
